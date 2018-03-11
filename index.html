@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>pSensors - Queequeg</title>
+  <meta name="description" content="Temperature Sensor Data">
+</head>
+
+<body>
+  <img id='sensor-img' src="sensors.png"/>
+
+  <script>
+    const sensorImg = document.getElementById('sensor-img')
+    const originalSrc = sensorImg.src
+    function updateSensors() {
+        sensorImg.src = originalSrc + "?time=" + (new Date());
+    }
+    setInterval(updateSensors, 1000);
+  </script>
+</body>
+</html>
