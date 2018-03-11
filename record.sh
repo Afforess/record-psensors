@@ -11,6 +11,7 @@ WINDOW_ARGS=( $WINDOW )
 WINDOW_ID=${WINDOW_ARGS[0]}
 
 while true; do
+    echo "import -window $WINDOW_ID sensors.png"
     import -window $WINDOW_ID sensors.png
-    sleep 1
+    sleep 2
 done
