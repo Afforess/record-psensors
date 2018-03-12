@@ -1,0 +1,8 @@
+[Unit]
+Description=pSensor screenshot service
+
+[Service]
+ExecStart=/usr/local/bin/record-sensors.sh
+
+[Install]
+WantedBy=multi-user.target
