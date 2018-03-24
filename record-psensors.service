@@ -5,4 +5,4 @@ Description=pSensor screenshot service
 ExecStart=/usr/local/bin/record-sensors.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
